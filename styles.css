@@ -1,44 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
 }
-:root{
-    --background:#222;
-    --text-color:#fff;
+
+:root {
+    --background: #222;
+    --text-color: #fff;
 }
-body{
+
+body {
     background-color: var(--background);
 }
-.card{
+
+.card {
     width: 90%;
     max-width: 750px;
-    background: linear-gradient(135deg,#00feba,#5b548a);
+    background: linear-gradient(135deg, #00feba, #5b548a);
     color: var(--text-color);
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    overflow-y: auto; /* Add this line to enable vertical scrolling */
 }
-@media(max-width:870px){
+
+@media (max-width: 870px) {
     .card {
         margin: 50px auto 0;
         max-width: 90%;
     }
 }
-.search{
+
+.search {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-@media(max-width:650px){
-    .search{
+
+@media (max-width: 650px) {
+    .search {
         flex-direction: column;
     }
-    .search input{
+
+    .search input {
         margin: 16px auto;
     }
 }
